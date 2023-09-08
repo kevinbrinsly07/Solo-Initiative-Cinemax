@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_clock_icon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_clock_icon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_star_icon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_star_icon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_logocn.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_logocn.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_slider2.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_slider2.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_woman.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_woman.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_progressbtn2.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_progressbtn2.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_eyeoff.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_eyeoff.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_apple.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_apple.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_google.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_google.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_leftarrow.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_leftarrow.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_slider3.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_slider3.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_progressbtn.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_progressbtn.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.cinemax.app-main-33:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_slider.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_slider.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.cinemax.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_woman2.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_woman2.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_rightarrow.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_rightarrow.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_bg.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_bg.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_line.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_line.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_fb.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_fb.png"
+    },
+    {
+        "merged": "com.cinemax.app-merged_res-31:/drawable-mdpi_assets_images_progressbtn3.png.flat",
+        "source": "com.cinemax.app-main-33:/drawable-mdpi/assets_images_progressbtn3.png"
+    }
+]
