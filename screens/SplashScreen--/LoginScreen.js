@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   StatusBar,
@@ -9,9 +9,25 @@ import {
   TextInput,
 } from 'react-native';
 
+import auth from "@react-native-firebase/auth";
+
 const LoginScreen = ({navigation}) => {
   const leftArrow = '../../assets/images/leftArrow.png';
   const eyeOff = '../../assets/images/eyeOff.png';
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+
+  const handleSignIn = async () => {
+    try {
+      await auth().signInWithEmailAndPassword(email, password);
+      console.log(' User signed in successfully');
+      navigation.replace('Home');
+    } catch (error) {
+      console.error('Sign in error: ', error);
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -38,6 +54,8 @@ const LoginScreen = ({navigation}) => {
               style={styles.inputName}
               placeholder="Tiffanyjearsey@gmail.com"
               placeholderTextColor="#92929D"
+              value={email}
+              onChangeText={(text) => setEmail(text)}
             />
           </View>
         </View>
@@ -49,6 +67,8 @@ const LoginScreen = ({navigation}) => {
               style={styles.inputName}
               placeholder="Password"
               placeholderTextColor="#92929D"
+              value={password}
+              onChangeText={(text) => setPassword(text)}
             />
           </View>
           <TouchableOpacity style={styles.eyeOff}>
@@ -61,7 +81,8 @@ const LoginScreen = ({navigation}) => {
         <View style={styles.bottomPart}>
           <TouchableOpacity
             style={styles.btn}
-            onPress={() => navigation.navigate('Home')}>
+            // onPress={() => navigation.navigate('Home')}
+            onPress={handleSignIn}>
             <Text style={styles.btnText}>Login</Text>
           </TouchableOpacity>
         </View>

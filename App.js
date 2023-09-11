@@ -1,6 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import 'firebase/auth'; 
+// import './firebase'; 
 
 import NavigationBtn from './NavigationButtons';
 import Onboarding1 from './screens/Onboarding/Onboarding1';

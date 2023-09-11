@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'rgba(31, 29, 43, 1)',
-    height: '100%',
   },
 
   lastBottom: {
