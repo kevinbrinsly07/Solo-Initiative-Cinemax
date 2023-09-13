@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.cinemax.app-mergeDebugResources-35:/values-bn/values-bn.xml",
+            "outputFile": "com.cinemax.app-mergeDebugResources-36:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "/Users/kevinbrinsly/.gradle/caches/transforms-3/1b5af26fac14777179546a59a5913ec4/transformed/browser-1.4.0/res/values-bn/values-bn.xml",

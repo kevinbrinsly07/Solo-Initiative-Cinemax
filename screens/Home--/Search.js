@@ -153,11 +153,11 @@ const Search = ({navigation}) => {
           onPress={() => navigation.navigate('Home')}>
           <Image style={styles.navIcon} source={require(home)} />
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.navSec1, styles.selectedOne]}>
+        <View style={[styles.navSec1, styles.selectedOne]}>
           <Image style={styles.navIcon} source={require(searchBlue)} />
           <Text style={styles.selectedOneText}>Search</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navSec1}>
+        </View>
+        <TouchableOpacity onPress={() => navigation.navigate("Download")} style={styles.navSec1}>
           <Image style={styles.navIcon} source={require(download)} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.navSec1}>

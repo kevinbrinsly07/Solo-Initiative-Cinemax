@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.cinemax.app-mergeDebugResources-35:/values-fa/values-fa.xml",
+            "outputFile": "com.cinemax.app-mergeDebugResources-36:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "/Users/kevinbrinsly/.gradle/caches/transforms-3/845c42ea617b425eb1fb868d75dc0e08/transformed/core-1.7.0/res/values-fa/values-fa.xml",

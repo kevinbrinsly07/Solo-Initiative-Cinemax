@@ -17,14 +17,14 @@ const Onboarding2 = ({navigation}) => {
   const progressBtn2 = '../../assets/images/progressBtn2.png';
   const tom = '../../assets/images/tom.png';
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  
+
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const data = [
     {id: 1, image: require(tom)},
     {id: 2, image: require(tom)},
     {id: 3, image: require(tom)},
-    // {id: 4, image: require(tom)},
-    // {id: 5, image: require(tom)},
   ];
 
   const renderItem = ({item, index}) => {
@@ -49,6 +49,7 @@ const Onboarding2 = ({navigation}) => {
             onSnapToItem={index => setActiveIndex(index)}
             sliderWidth={400}
             itemWidth={250}
+            firstItem={1} 
           />
         </View>
         <View style={styles.border}>

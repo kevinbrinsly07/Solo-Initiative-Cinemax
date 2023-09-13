@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   View,
   StatusBar,
@@ -7,17 +7,20 @@ import {
   Image,
   TouchableOpacity,
   ImageBackground,
-} from 'react-native';
+} from "react-native";
 
-const Onboarding4 = ({navigation}) => {
-  const rightArrow = '../../assets/images/rightArrow.png';
-  const slider = '../../assets/images/slider.png';
-  const progressBtn = '../../assets/images/progressBtn.png';
-  const bg = '../../assets/images/bg.png';
+const Onboarding4 = ({ navigation }) => {
+  const rightArrow = "../../assets/images/rightArrow.png";
+  const slider = "../../assets/images/slider.png";
+  const progressBtn = "../../assets/images/progressBtn.png";
+  const bg = "../../assets/images/bg.png";
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
+      <StatusBar
+        hidden={true}
+        // backgroundColor={'rgba(31, 29, 43, 1)'}
+      />
       <ImageBackground source={require(bg)} style={styles.container}>
         <View style={styles.content}>
           <View style={styles.contentOne}>
@@ -33,7 +36,8 @@ const Onboarding4 = ({navigation}) => {
                 <Image style={styles.slider} source={require(slider)} />
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={() => navigation.navigate('Onboarding5')}>
+                onPress={() => navigation.navigate("Onboarding5")}
+              >
                 <Image style={styles.nextBtn} source={require(progressBtn)} />
                 <Image style={styles.rightArrow} source={require(rightArrow)} />
               </TouchableOpacity>
@@ -48,19 +52,19 @@ const Onboarding4 = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgba(31, 29, 43, 1)',
+    backgroundColor: "rgba(31, 29, 43, 1)",
   },
 
   lastBottom: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginTop: 60,
   },
 
   rightArrow: {
     width: 24,
     height: 24,
-    position: 'absolute',
+    position: "absolute",
     bottom: 28,
     left: 28,
   },
@@ -78,39 +82,39 @@ const styles = StyleSheet.create({
 
   content: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-end',
+    alignItems: "center",
+    justifyContent: "flex-end",
     marginBottom: 20,
   },
 
   contentOne: {
-    backgroundColor: '#171725',
+    backgroundColor: "#171725",
     width: 327,
     height: 341,
     borderRadius: 32,
-    alignItems: 'center',
+    alignItems: "center",
   },
 
   text1: {
-    color: 'white',
+    color: "white",
     fontSize: 18,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
     lineHeight: 28.8,
     paddingHorizontal: 40,
     marginTop: 32,
   },
 
   text2: {
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 14,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     paddingHorizontal: 35,
     marginTop: 14,
-    textAlign: 'center',
+    textAlign: "center",
   },
 
   textCus: {
-    textAlign: 'center',
+    textAlign: "center",
     letterSpacing: 0.12,
   },
 });

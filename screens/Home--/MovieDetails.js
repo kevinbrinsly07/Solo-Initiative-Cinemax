@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   StatusBar,
@@ -6,42 +6,201 @@ import {
   Text,
   Image,
   TouchableOpacity,
-  TextInput,
   ImageBackground,
+  ScrollView,
+  Modal,
 } from "react-native";
 
-// import LinearGradient from "react-native-linear-gradient";
+import { BlurView } from "@react-native-community/blur";
 
 const MovieDetails = ({ navigation }) => {
   const leftArrow = "../../assets/images/leftArrow.png";
   const heart = "../../assets/images/heartIcon.png";
   const bg = "../../assets/images/bgSpiderman.png";
+  const overlay = "../../assets/images/Overlay.png";
   const bigPoster1 = "../../assets/images/bigPoster1.png";
+  const calendar = "../../assets/images/calendar.png";
+  const clock = "../../assets/images/clock.png";
+  const film = "../../assets/images/film.png";
+  const line = "../../assets/images/line2.png";
+  const starOrange = "../../assets/images/starOrange.png";
+  const play = "../../assets/images/play.png";
+  const downloadOrange = "../../assets/images/downloadOrange.png";
+  const share = "../../assets/images/share.png";
+  const closeGrey = "../../assets/images/closeGrey.png";
+  const line3 = "../../assets/images/line3.png";
+
+  const home = "../../assets/images/homeBlue.png";
+  const searchIcon = "../../assets/images/searchIcon.png";
+  const download = "../../assets/images/download.png";
+  const person = "../../assets/images/person.png";
+
+  const circle1 = "../../assets/images/circle1.png";
+  const circle2 = "../../assets/images/circle2.png";
+  const circle3 = "../../assets/images/circle3.png";
+  const circle4 = "../../assets/images/circle4.png";
+  const fb = "../../assets/images/fb.png";
+  const ig = "../../assets/images/ig.png";
+  const messenger = "../../assets/images/messenger.png";
+  const sendLogo = "../../assets/images/sendLogo.png";
+
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    setModalVisible(!modalVisible);
+  };
 
   return (
-    // <LinearGradient
-    //   colors={["rgba(31, 29, 43, 0.8)", "transparent"]}
-    //   style={styles.gradient} // Add a new style for the LinearGradient
-    // >
-      <View style={styles.container}>
-        <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
-
+    <View style={styles.container}>
+      <StatusBar
+        // hidden={true}
+        backgroundColor={"rgba(31, 29, 43, 1)"}
+      />
+      <ScrollView>
         <ImageBackground source={require(bg)} style={styles.bg}>
-          <View style={styles.top}>
-            <TouchableOpacity>
-              <Image style={styles.icon} source={require(leftArrow)} />
-            </TouchableOpacity>
-            <Text style={styles.title}>Spider-Man No Way..</Text>
-            <TouchableOpacity style={styles.heartBorder}>
-              <Image style={styles.icon} source={require(heart)} />
-            </TouchableOpacity>
-          </View>
-          <View style={styles.posterSec}>
-            <Image style={styles.bigPoster1} source={require(bigPoster1)} />
-          </View>
+          <ImageBackground source={require(overlay)}>
+            <View style={styles.top}>
+              <TouchableOpacity onPress={() => navigation.navigate("Search")}>
+                <Image style={styles.icon} source={require(leftArrow)} />
+              </TouchableOpacity>
+              <Text style={styles.title}>Spider-Man No Way..</Text>
+              <TouchableOpacity
+                onPress={() => navigation.navigate("Wishlist")}
+                style={styles.heartBorder}
+              >
+                <Image style={styles.icon} source={require(heart)} />
+              </TouchableOpacity>
+            </View>
+            <View style={styles.posterSec}>
+              <Image style={styles.bigPoster1} source={require(bigPoster1)} />
+              <View style={styles.iconSec}>
+                <Image style={styles.iconMini} source={require(calendar)} />
+                <Text style={styles.iconText}>2021</Text>
+                <Image style={styles.line} source={require(line)} />
+                <Image style={styles.iconMini} source={require(clock)} />
+                <Text style={styles.iconText}>148 Minutes</Text>
+                <Image style={styles.line} source={require(line)} />
+                <Image style={styles.iconMini} source={require(film)} />
+                <Text style={styles.iconText}>Action</Text>
+              </View>
+              <View style={styles.ratingSec}>
+                <Image style={styles.iconMini} source={require(starOrange)} />
+                <Text style={styles.ratingText}>4.5</Text>
+              </View>
+              <View style={styles.btnSec}>
+                <TouchableOpacity style={styles.btnPlay}>
+                  <Image style={styles.icon} source={require(play)} />
+                  <Text style={styles.playText}>Play</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate("Download")}
+                  style={styles.otherBtn}
+                >
+                  <Image style={styles.icon} source={require(downloadOrange)} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={toggleModal} style={styles.otherBtn}>
+                  <Image style={styles.icon} source={require(share)} />
+                </TouchableOpacity>
+              </View>
+            </View>
+          </ImageBackground>
         </ImageBackground>
+        <View style={styles.des}>
+          <Text style={styles.desTitle}>Story Line</Text>
+          <Text style={styles.desInfo}>
+            For the first time in the cinematic history of Spider-Man, our
+            friendly neighborhood hero's identity is revealed, bringing his
+            Super Hero responsibilities into conflict with his normal life and
+            putting those he cares about most at risk. More
+          </Text>
+          <Text style={styles.desTitle}>Cast and Crew</Text>
+          <Text style={styles.desInfo}>
+            For the first time in the cinematic history of Spider-Man, our
+            friendly neighborhood hero's identity is revealed, bringing his
+            Super Hero responsibilities into conflict with his normal life and
+            putting those he cares about most at risk. More
+          </Text>
+        </View>
+      </ScrollView>
+      <View style={styles.bottomNav}>
+        <TouchableOpacity style={[styles.navSec1, styles.selectedOne]}>
+          <Image style={styles.navIcon} source={require(home)} />
+          <Text style={styles.selectedOneText}>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.navSec1}
+          onPress={() => navigation.navigate("Search")}
+        >
+          <Image style={styles.navIcon} source={require(searchIcon)} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Download")}
+          style={styles.navSec1}
+        >
+          <Image style={styles.navIcon} source={require(download)} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.navSec1}>
+          <Image style={styles.navIcon} source={require(person)} />
+        </TouchableOpacity>
       </View>
-    // </LinearGradient>
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={toggleModal}
+      >
+        <View style={styles.modalContainer}>
+          {/* <BlurView
+            style={styles.modalBlur}
+            blurType="dark" // You can adjust the blur type as needed
+            blurAmount={10} // Adjust the blur amount
+          > */}
+          <View style={styles.modalContent}>
+            <TouchableOpacity onPress={toggleModal} style={styles.closeButton}>
+              <Image style={styles.iconMini} source={require(closeGrey)} />
+            </TouchableOpacity>
+            <Text style={styles.modalText}>Share to</Text>
+            <Image style={styles.line6} source={require(line3)} />
+            <View style={styles.socialContent}>
+              <TouchableOpacity>
+                <ImageBackground
+                  style={styles.circle}
+                  source={require(circle1)}
+                >
+                  <Image style={styles.icon} source={require(fb)} />
+                </ImageBackground>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <ImageBackground
+                  style={styles.circle}
+                  source={require(circle2)}
+                >
+                  <Image style={styles.icon} source={require(ig)} />
+                </ImageBackground>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <ImageBackground
+                  style={styles.circle}
+                  source={require(circle3)}
+                >
+                  <Image style={styles.icon} source={require(messenger)} />
+                </ImageBackground>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <ImageBackground
+                  style={styles.circle}
+                  source={require(circle4)}
+                >
+                  <Image style={styles.icon} source={require(sendLogo)} />
+                </ImageBackground>
+              </TouchableOpacity>
+            </View>
+          </View>
+
+          {/* </BlurView> */}
+        </View>
+      </Modal>
+    </View>
   );
 };
 
@@ -54,15 +213,9 @@ const styles = StyleSheet.create({
   posterSec: {
     alignItems: "center",
   },
-  gradient: {
-    flex: 1, // Make the LinearGradient fill the entire screen
-  },
 
   bg: {
-    height: 552,
-    // borderBottomLeftRadius: 100,
-    // borderBottomRightRadius: 100,
-    // overflow: 'hidden',
+    height: 500,
   },
 
   bigPoster1: {
@@ -94,6 +247,184 @@ const styles = StyleSheet.create({
     marginTop: -8,
     backgroundColor: "#252836",
     borderRadius: 12,
+  },
+
+  iconSec: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    width: 274,
+    marginTop: 16,
+  },
+
+  iconMini: {
+    width: 16,
+    height: 16,
+  },
+
+  iconText: {
+    color: "#92929D",
+    fontSize: 12,
+    fontFamily: "Montserrat-Medium",
+  },
+
+  ratingSec: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    width: 55,
+    height: 24,
+    borderRadius: 8,
+    backgroundColor: "rgba(37, 40, 54, 0.32)",
+    marginTop: 8,
+  },
+
+  ratingText: {
+    color: "#FF8700",
+    fontSize: 12,
+    fontFamily: "Montserrat-SemiBold",
+  },
+
+  btnSec: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    width: 243,
+    marginTop: 24,
+  },
+
+  playText: {
+    color: "white",
+    fontSize: 16,
+    fontFamily: "Montserrat-Medium",
+    marginLeft: 8,
+  },
+
+  btnPlay: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 115,
+    height: 48,
+    borderRadius: 32,
+    backgroundColor: "rgba(255, 135, 0, 1)",
+  },
+
+  otherBtn: {
+    width: 48,
+    height: 48,
+    borderRadius: 99,
+    backgroundColor: "#252836",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  des: {
+    marginLeft: 24,
+    marginTop: 24,
+  },
+
+  desTitle: {
+    color: "white",
+    fontSize: 16,
+    fontFamily: "Montserrat-SemiBold",
+  },
+
+  desInfo: {
+    color: "#EBEBEF",
+    fontSize: 14,
+    fontFamily: "Montserrat-Regular",
+    width: 325,
+    marginTop: 8,
+    marginBottom: 24,
+  },
+
+  bottomNav: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    height: 72,
+  },
+
+  navIcon: {
+    width: 24,
+    height: 24,
+  },
+
+  selectedOne: {
+    backgroundColor: "rgba(37, 40, 54, 1)",
+    width: 98,
+    height: 40,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 16,
+  },
+
+  selectedOneText: {
+    color: "#12CDD9",
+    fontSize: 12,
+    fontFamily: "Montserrat-Medium",
+    marginLeft: 5,
+  },
+
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+  },
+
+  modalBlur: {
+    flex: 1,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  modalContent: {
+    width: 327,
+    height: 234,
+    borderRadius: 16,
+    alignItems: "center",
+    backgroundColor: "#252836",
+    padding: 20,
+  },
+
+  modalText: {
+    color: "white",
+    fontSize: 18,
+    fontFamily: "Montserrat-SemiBold",
+    marginTop: 19,
+  },
+
+  line6: {
+    marginTop: 16,
+  },
+
+  closeButton: {
+    backgroundColor: "#1F1D2B",
+    padding: 8,
+    borderRadius: 12,
+    marginLeft: 250,
+  },
+
+  closeButtonText: {
+    color: "white",
+    fontSize: 16,
+  },
+
+  socialContent: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    width: 244,
+    marginTop: 32,
+  },
+
+  circle: {
+    width: 49,
+    height: 49,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 

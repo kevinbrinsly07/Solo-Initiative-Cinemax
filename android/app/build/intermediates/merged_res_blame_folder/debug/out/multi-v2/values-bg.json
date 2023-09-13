@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.cinemax.app-mergeDebugResources-35:/values-bg/values-bg.xml",
+            "outputFile": "com.cinemax.app-mergeDebugResources-36:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/Users/kevinbrinsly/.gradle/caches/transforms-3/4c98ac1678e91268ed33f9d3ff7f04ab/transformed/jetified-play-services-basement-18.2.0/res/values-bg/values.xml",

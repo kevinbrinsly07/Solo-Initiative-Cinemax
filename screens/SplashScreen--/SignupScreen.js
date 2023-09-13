@@ -67,8 +67,6 @@ const SignupScreen = ({ navigation }) => {
           <View style={styles.inputSection}>
             <TextInput
               style={styles.inputName}
-              // value="email"
-              // onChangeText={text => setEmail(text)}
               placeholder="Tiffanyjearsey@gmail.com"
               placeholderTextColor="#92929D"
               value={email}
@@ -82,8 +80,6 @@ const SignupScreen = ({ navigation }) => {
             <TextInput
               secureTextEntry
               style={styles.inputName}
-              // value="password"
-              // onChangeText={text => setPassword(text)}
               value={password}
               onChangeText={(text) => setPassword(text)}
               placeholder="Password"
@@ -111,7 +107,6 @@ const SignupScreen = ({ navigation }) => {
         <View style={styles.bottomPart}>
           <TouchableOpacity
             style={styles.btn}
-            // onPress={() => navigation.navigate("LoginScreen")}
             onPress={handleSignUp}
           >
             <Text style={styles.btnText}>Sign Up</Text>

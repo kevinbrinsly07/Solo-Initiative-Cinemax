@@ -1,10 +1,10 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-// import 'firebase/auth'; 
-// import './firebase'; 
+
 
 import NavigationBtn from './NavigationButtons';
+
 import Onboarding1 from './screens/Onboarding/Onboarding1';
 import Onboarding2 from './screens/Onboarding/Onboarding2';
 import Onboarding3 from './screens/Onboarding/Onboarding3';
@@ -24,6 +24,12 @@ import SearchResults from './screens/Home--/SearchResults';
 import SearchByActor from './screens/Home--/SearchByActor';
 import SearchBlank from './screens/Home--/SearchBlank';
 import MovieDetails from './screens/Home--/MovieDetails';
+import Download from './screens/Home--/Download';
+import BlankDownload from './screens/Home--/BlankDownload';
+import Wishlist from './screens/Home--/Wishlist';
+import BlankWishlist from './screens/Home--/BlankWishlist';
+import Genre from './screens/Home--/Genre';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +57,11 @@ export default function App() {
         <Stack.Screen name="SearchByActor" component={SearchByActor} />
         <Stack.Screen name="SearchBlank" component={SearchBlank} />
         <Stack.Screen name="MovieDetails" component={MovieDetails} />
+        <Stack.Screen name="Download" component={Download} />
+        <Stack.Screen name="BlankDownload" component={BlankDownload} />
+        <Stack.Screen name="Wishlist" component={Wishlist} />
+        <Stack.Screen name="BlankWishlist" component={BlankWishlist} />
+        <Stack.Screen name="Genre" component={Genre} />
       </Stack.Navigator>
     </NavigationContainer>
   );

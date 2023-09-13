@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import {
   View,
   StatusBar,
@@ -6,47 +6,47 @@ import {
   Text,
   Image,
   TouchableOpacity,
-} from 'react-native';
+} from "react-native";
 
-import Carousel, {Pagination} from 'react-native-snap-carousel';
-import SearchBar from './SearchBar';
-import Tab from './Tab';
-import MoviePosterList from './MoviePosterList';
+import Carousel, { Pagination } from "react-native-snap-carousel";
+import SearchBar from "./SearchBar";
+import Tab from "./Tab";
+import MoviePosterList from "./MoviePosterList";
 
-const Home = ({navigation}) => {
-  const profilePic = '../../assets/images/profilePic.png';
-  const heartIcon = '../../assets/images/heartIcon.png';
-  const poster = '../../assets/images/poster.png';
+const Home = ({ navigation }) => {
+  const profilePic = "../../assets/images/profilePic.png";
+  const heartIcon = "../../assets/images/heartIcon.png";
+  const poster = "../../assets/images/poster.png";
 
-  const home = '../../assets/images/homeBlue.png';
-  const searchIcon = '../../assets/images/searchIcon.png';
-  const download = '../../assets/images/download.png';
-  const person = '../../assets/images/person.png';
+  const home = "../../assets/images/homeBlue.png";
+  const searchIcon = "../../assets/images/searchIcon.png";
+  const download = "../../assets/images/download.png";
+  const person = "../../assets/images/person.png";
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const data = [
     {
       id: 1,
       image: require(poster),
-      text: 'title',
-      text2: 'date',
+      text: "title",
+      text2: "date",
     },
     {
       id: 2,
       image: require(poster),
-      text: 'Black Panther: Wakanda Forever',
-      text2: 'On March 2, 2022',
+      text: "Black Panther: Wakanda Forever",
+      text2: "On March 2, 2022",
     },
     {
       id: 4,
       image: require(poster),
-      text: 'title4',
-      text2: 'date4',
+      text: "title4",
+      text2: "date4",
     },
   ];
 
-  const renderItem = ({item, index}) => {
+  const renderItem = ({ item, index }) => {
     const isPresented = index === activeIndex;
     const marginBottomStyle = isPresented ? styles.imageWithMargin : null;
 
@@ -61,7 +61,7 @@ const Home = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
+      <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
       <View style={styles.content}>
         <View style={styles.firstContainer}>
           <Image style={styles.logoCN} source={require(profilePic)} />
@@ -73,7 +73,8 @@ const Home = ({navigation}) => {
           </View>
           <TouchableOpacity
             style={styles.heart}
-            onPress={() => navigation.navigate('Search')}>
+            onPress={() => navigation.navigate("Search")}
+          >
             <Image style={styles.heartIcon} source={require(heartIcon)} />
           </TouchableOpacity>
         </View>
@@ -86,9 +87,10 @@ const Home = ({navigation}) => {
           <Carousel
             data={data}
             renderItem={renderItem}
-            onSnapToItem={index => setActiveIndex(index)}
+            onSnapToItem={(index) => setActiveIndex(index)}
             sliderWidth={500}
             itemWidth={245}
+            firstItem={1}
           />
           <Pagination
             dotsLength={data.length}
@@ -114,16 +116,20 @@ const Home = ({navigation}) => {
         </View>
 
         <View style={styles.bottomNav}>
-          <TouchableOpacity style={[styles.navSec1, styles.selectedOne]}>
+          <View style={[styles.navSec1, styles.selectedOne]}>
             <Image style={styles.navIcon} source={require(home)} />
             <Text style={styles.selectedOneText}>Home</Text>
-          </TouchableOpacity>
+          </View>
           <TouchableOpacity
             style={styles.navSec1}
-            onPress={() => navigation.navigate('Search')}>
+            onPress={() => navigation.navigate("Search")}
+          >
             <Image style={styles.navIcon} source={require(searchIcon)} />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.navSec1}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Download")}
+            style={styles.navSec1}
+          >
             <Image style={styles.navIcon} source={require(download)} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.navSec1}>
@@ -137,23 +143,23 @@ const Home = ({navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(31, 29, 43, 1)',
-    height: '100%',
+    backgroundColor: "rgba(31, 29, 43, 1)",
+    height: "100%",
   },
 
   content: {
-    height: '100%',
+    height: "100%",
   },
 
   firstContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginHorizontal: 20,
     marginVertical: 20,
   },
 
   firstContainerSub: {
-    flexDirection: 'column',
+    flexDirection: "column",
     flex: 1,
     marginLeft: 16,
   },
@@ -169,36 +175,36 @@ const styles = StyleSheet.create({
   },
 
   heart: {
-    backgroundColor: '#252836',
+    backgroundColor: "#252836",
     width: 32,
     height: 32,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 12,
     opacity: 0.8,
   },
 
   heading1: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
   },
 
   heading2: {
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
   },
 
   text: {
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 28,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
     letterSpacing: 0.12,
   },
 
   SearchBar: {
-    position: 'absolute',
+    position: "absolute",
     top: 80,
     left: 50,
   },
@@ -206,8 +212,8 @@ const styles = StyleSheet.create({
   slide: {
     width: 200,
     height: 154,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginTop: 200,
   },
 
@@ -222,32 +228,32 @@ const styles = StyleSheet.create({
   },
 
   AlignCenter: {
-    position: 'absolute',
+    position: "absolute",
     left: 0,
     top: -50,
   },
 
   CText: {
-    position: 'absolute',
+    position: "absolute",
     top: 70,
     left: -20,
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
     width: 214,
   },
 
   CText2: {
-    color: '#EBEBEF',
+    color: "#EBEBEF",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
-    position: 'absolute',
+    fontFamily: "Montserrat-Medium",
+    position: "absolute",
     top: 110,
     left: -20,
   },
 
   paginationContainer: {
-    position: 'absolute',
+    position: "absolute",
     left: 150,
     top: 330,
   },
@@ -256,7 +262,7 @@ const styles = StyleSheet.create({
     width: 30,
     height: 10,
     borderRadius: 5,
-    backgroundColor: '#12CDD9',
+    backgroundColor: "#12CDD9",
   },
 
   paginationInactiveDot: {
@@ -264,53 +270,54 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     opacity: 0.32,
-    backgroundColor: '#12CDD9',
+    backgroundColor: "#12CDD9",
   },
 
   heading3: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
-    position: 'absolute',
+    fontFamily: "Montserrat-SemiBold",
+    position: "absolute",
     top: 280,
     left: 24,
   },
 
   tab: {
-    position: 'absolute',
+    position: "absolute",
     top: 400,
     left: 28,
   },
 
   heading4: {
-    position: 'absolute',
+    position: "absolute",
     top: 464,
     left: 24,
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
   },
 
   heading4Des: {
-    position: 'absolute',
+    position: "absolute",
     top: 464,
     right: 24,
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 14,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
   },
 
   moviePosterList: {
-    position: 'absolute',
+    position: "absolute",
     top: 500,
     left: 14,
   },
 
   bottomNav: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-    marginTop: 660,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    marginTop: 645,
+    height: 72,
   },
 
   navIcon: {
@@ -319,19 +326,19 @@ const styles = StyleSheet.create({
   },
 
   selectedOne: {
-    backgroundColor: 'rgba(37, 40, 54, 1)',
+    backgroundColor: "rgba(37, 40, 54, 1)",
     width: 98,
     height: 40,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 16,
   },
 
   selectedOneText: {
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     marginLeft: 5,
   },
 });
