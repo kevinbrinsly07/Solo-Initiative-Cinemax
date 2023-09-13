@@ -1,12 +1,8 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text, ScrollView} from 'react-native';
 
-//add navigator
 
 const Tab = () => {
-  // const searchIcon = '../../assets/images/searchIcon.png';
-  // const filterIcon = '../../assets/images/filterIcon.png';
-  // const line2 = '../../assets/images/line2.png';
 
   return (
     <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>

@@ -29,6 +29,8 @@ import BlankDownload from './screens/Home--/BlankDownload';
 import Wishlist from './screens/Home--/Wishlist';
 import BlankWishlist from './screens/Home--/BlankWishlist';
 import Genre from './screens/Home--/Genre';
+import UpcomingMovie from './screens/Home--/UpcomingMovie';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -62,6 +64,7 @@ export default function App() {
         <Stack.Screen name="Wishlist" component={Wishlist} />
         <Stack.Screen name="BlankWishlist" component={BlankWishlist} />
         <Stack.Screen name="Genre" component={Genre} />
+        <Stack.Screen name="UpcomingMovie" component={UpcomingMovie} />
       </Stack.Navigator>
     </NavigationContainer>
   );

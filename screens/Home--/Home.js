@@ -73,7 +73,7 @@ const Home = ({ navigation }) => {
           </View>
           <TouchableOpacity
             style={styles.heart}
-            onPress={() => navigation.navigate("Search")}
+            onPress={() => navigation.navigate("Wishlist")}
           >
             <Image style={styles.heartIcon} source={require(heartIcon)} />
           </TouchableOpacity>
@@ -182,6 +182,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 12,
     opacity: 0.8,
+    zIndex: 1,
   },
 
   heading1: {
@@ -207,12 +208,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 80,
     left: 50,
+    zIndex: 1,
   },
 
   slide: {
     width: 200,
-    height: 154,
-    justifyContent: "center",
+    height: 164,
+    justifyContent: "flex-end",
     alignItems: "center",
     marginTop: 200,
   },

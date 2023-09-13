@@ -65,7 +65,7 @@ const MovieDetails = ({ navigation }) => {
               </TouchableOpacity>
               <Text style={styles.title}>Spider-Man No Way..</Text>
               <TouchableOpacity
-                onPress={() => navigation.navigate("Wishlist")}
+                // onPress={() => navigation.navigate("Wishlist")}
                 style={styles.heartBorder}
               >
                 <Image style={styles.icon} source={require(heart)} />

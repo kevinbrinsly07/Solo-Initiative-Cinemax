@@ -87,7 +87,7 @@ const Genre = ({ navigation }) => {
         <View style={styles.firstContainer}>
           <TouchableOpacity
             style={styles.arrowBtn}
-            onPress={() => navigation.navigate("BlankWishlist")}
+            onPress={() => navigation.navigate("UpcomingMovie")}
           >
             <Image style={styles.icon} source={require(leftArrow)} />
           </TouchableOpacity>
