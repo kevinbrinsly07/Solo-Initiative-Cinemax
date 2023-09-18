@@ -40,7 +40,7 @@ const Onboarding2 = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(23, 23, 37, 1)'} />
+      <StatusBar hidden={true}/>
       <SafeAreaView>
         <View style={styles.upperPart}>
           <Carousel

@@ -29,12 +29,11 @@ const UpcomingMovie = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
-      {/* <ScrollView showsVerticalScrollIndicator={false}> */}
         <View style={styles.border}>
           <View style={styles.firstContainer}>
             <TouchableOpacity
               style={styles.arrowBtn}
-              onPress={() => navigation.navigate("Genre")}
+              onPress={() => navigation.navigate("Home")}
             >
               <Image style={styles.icon} source={require(leftArrow)} />
             </TouchableOpacity>
@@ -46,7 +45,7 @@ const UpcomingMovie = ({ navigation }) => {
           <View style={styles.secondContainer}>
             <Tab />
             
-              <View style={styles.card}>
+              <TouchableOpacity onPress={() => navigation.navigate("Trailer")} style={styles.card}>
                 <ImageBackground
                   style={styles.poster}
                   source={require(upcomingPoster1)}
@@ -61,9 +60,9 @@ const UpcomingMovie = ({ navigation }) => {
                   <Image style={styles.iconMini} source={require(film)} />
                   <Text style={styles.title2}>Action</Text>
                 </View>
-              </View>
+              </TouchableOpacity>
 
-              <View style={styles.card}>
+              <TouchableOpacity style={styles.card}>
                 <ImageBackground
                   style={styles.poster}
                   source={require(upcomingPoster2)}
@@ -78,9 +77,9 @@ const UpcomingMovie = ({ navigation }) => {
                   <Image style={styles.iconMini} source={require(film)} />
                   <Text style={styles.title2}>Action</Text>
                 </View>
-              </View>
+              </TouchableOpacity>
 
-              <View style={styles.card}>
+              <TouchableOpacity style={styles.card}>
                 <ImageBackground
                   style={styles.poster}
                   source={require(upcomingPoster1)}
@@ -95,9 +94,9 @@ const UpcomingMovie = ({ navigation }) => {
                   <Image style={styles.iconMini} source={require(film)} />
                   <Text style={styles.title2}>Action</Text>
                 </View>
-              </View>
+              </TouchableOpacity>
 
-              <View style={styles.card}>
+              <TouchableOpacity style={styles.card}>
                 <ImageBackground
                   style={styles.poster}
                   source={require(upcomingPoster2)}
@@ -112,12 +111,11 @@ const UpcomingMovie = ({ navigation }) => {
                   <Image style={styles.iconMini} source={require(film)} />
                   <Text style={styles.title2}>Action</Text>
                 </View>
-              </View>
+              </TouchableOpacity>
            
           </View>
           </ScrollView>
         </View>
-      {/* </ScrollView> */}
 
       <View style={styles.bottomNav}>
         <View style={[styles.navSec1, styles.selectedOne]}>

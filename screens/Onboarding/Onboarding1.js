@@ -19,7 +19,7 @@ const Onboarding1 = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(23, 23, 37, 1)'} />
+      <StatusBar hidden={true}/>
       <SafeAreaView>
         <View style={styles.upperPart}>
           <Svg style={styles.color} height="380" width="100%">

@@ -24,7 +24,7 @@ const BlankWishlist = ({ navigation }) => {
         <View style={styles.firstContainer}>
           <TouchableOpacity
             style={styles.arrowBtn}
-            onPress={() => navigation.navigate("Genre")}
+            onPress={() => navigation.navigate("Home")}
           >
             <Image style={styles.icon} source={require(leftArrow)} />
           </TouchableOpacity>

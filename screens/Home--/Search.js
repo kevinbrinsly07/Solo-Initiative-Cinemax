@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import {
   View,
   StatusBar,
@@ -8,67 +8,68 @@ import {
   TouchableOpacity,
   TextInput,
   FlatList,
-} from 'react-native';
+  ScrollView,
+} from "react-native";
 
-import Tab from './Tab';
+import Tab from "./Tab";
 
-const Search = ({navigation}) => {
-  const searchIcon = '../../assets/images/searchIcon.png';
-  const calendar = '../../assets/images/calendar.png';
-  const clock = '../../assets/images/clock.png';
-  const film = '../../assets/images/film.png';
-  const line2 = '../../assets/images/line2.png';
+const Search = ({ navigation }) => {
+  const searchIcon = "../../assets/images/searchIcon.png";
+  const calendar = "../../assets/images/calendar.png";
+  const clock = "../../assets/images/clock.png";
+  const film = "../../assets/images/film.png";
+  const line2 = "../../assets/images/line2.png";
 
-  const poster1 = '../../assets/images/poster1.png';
-  const poster2 = '../../assets/images/poster2.png';
-  const poster3 = '../../assets/images/poster3.png';
-  const poster4 = '../../assets/images/poster4.png';
+  const poster1 = "../../assets/images/poster1.png";
+  const poster2 = "../../assets/images/poster2.png";
+  const poster3 = "../../assets/images/poster3.png";
+  const poster4 = "../../assets/images/poster4.png";
 
-  const home = '../../assets/images/home.png';
-  const searchBlue = '../../assets/images/searchBlue.png';
-  const download = '../../assets/images/download.png';
-  const person = '../../assets/images/person.png';
+  const home = "../../assets/images/home.png";
+  const searchBlue = "../../assets/images/searchBlue.png";
+  const download = "../../assets/images/download.png";
+  const person = "../../assets/images/person.png";
 
   const movieData = [
     {
-      id: '1',
+      id: "1",
       image: require(poster2),
-      text: 'The Jungle Wa..',
-      text2: 'Action',
+      text: "The Jungle Wa..",
+      text2: "Action",
     },
     {
-      id: '2',
+      id: "2",
       image: require(poster4),
-      text: 'Life of PI',
-      text2: 'Action',
+      text: "Life of PI",
+      text2: "Action",
     },
     {
-      id: '3',
+      id: "3",
       image: require(poster3),
-      text: 'Riverdale',
-      text2: 'Action',
+      text: "Riverdale",
+      text2: "Action",
     },
     {
-      id: '4',
+      id: "4",
       image: require(poster1),
-      text: 'Spider-Man No..',
-      text2: 'Action',
+      text: "Spider-Man No..",
+      text2: "Action",
     },
     {
-      id: '5',
+      id: "5",
       image: require(poster2),
-      text: 'Life of PI',
-      text2: 'Action',
+      text: "Life of PI",
+      text2: "Action",
     },
     {
-      id: '6',
+      id: "6",
       image: require(poster3),
-      text: 'Riverdale',
-      text2: 'Action',
+      text: "Riverdale",
+      text2: "Action",
     },
   ];
 
-  const renderItem = ({item}) => (
+  const renderItem = ({ item }) => (
     <View style={styles.itemContainer}>
       <Image source={item.image} style={styles.posterImage} />
       <View style={styles.textContainer}>
@@ -80,17 +81,18 @@ const Search = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
+      <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
       <View style={styles.alignCenter}>
         <View style={styles.SearchBar}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('SearchResults')}>
+            onPress={() => navigation.navigate("SearchResults")}
+          >
             <Image style={styles.Icon} source={require(searchIcon)} />
           </TouchableOpacity>
           <TextInput
             style={styles.searchInput}
             placeholder="Type title, categories, years, etc"
-            placeholderTextColor={'#92929D'}
+            placeholderTextColor={"#92929D"}
           />
         </View>
       </View>
@@ -102,7 +104,8 @@ const Search = ({navigation}) => {
         <Text style={[styles.heading, styles.addMargin]}>Today</Text>
         <TouchableOpacity
           style={styles.inline}
-          onPress={() => navigation.navigate('MovieDetails')}>
+          onPress={() => navigation.navigate("MovieDetails")}
+        >
           <Image style={styles.poster} source={require(poster1)} />
           <View style={styles.desSubOne}>
             <View style={[styles.premiumLogo, styles.justify]}>
@@ -142,7 +145,7 @@ const Search = ({navigation}) => {
           data={movieData}
           horizontal={true}
           showsHorizontalScrollIndicator={false}
-          keyExtractor={item => item.id}
+          keyExtractor={(item) => item.id}
           renderItem={renderItem}
         />
       </View>
@@ -150,17 +153,24 @@ const Search = ({navigation}) => {
       <View style={styles.bottomNav}>
         <TouchableOpacity
           style={styles.navSec1}
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => navigation.navigate("Home")}
+        >
           <Image style={styles.navIcon} source={require(home)} />
         </TouchableOpacity>
         <View style={[styles.navSec1, styles.selectedOne]}>
           <Image style={styles.navIcon} source={require(searchBlue)} />
           <Text style={styles.selectedOneText}>Search</Text>
         </View>
-        <TouchableOpacity onPress={() => navigation.navigate("Download")} style={styles.navSec1}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Download")}
+          style={styles.navSec1}
+        >
           <Image style={styles.navIcon} source={require(download)} />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navSec1}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Profile")}
+          style={styles.navSec1}
+        >
           <Image style={styles.navIcon} source={require(person)} />
         </TouchableOpacity>
       </View>
@@ -170,20 +180,20 @@ const Search = ({navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(31, 29, 43, 1)',
-    height: '100%',
+    backgroundColor: "rgba(31, 29, 43, 1)",
+    height: "100%",
     flex: 1,
   },
 
   alignCenter: {
-    alignItems: 'center',
+    alignItems: "center",
   },
 
   SearchBar: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#252836',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#252836",
     borderRadius: 24,
     width: 370,
     height: 41,
@@ -197,13 +207,13 @@ const styles = StyleSheet.create({
 
   searchInput: {
     width: 239,
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 14,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
   },
 
   tab: {
-    position: 'absolute',
+    position: "absolute",
     top: 100,
     left: 25,
   },
@@ -214,7 +224,7 @@ const styles = StyleSheet.create({
   },
 
   inline: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
 
   justify: {
@@ -236,23 +246,23 @@ const styles = StyleSheet.create({
   },
 
   text1: {
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     marginLeft: 10,
   },
 
   pg: {
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
   },
 
   pgBorder: {
     borderWidth: 1,
-    borderColor: '#12CDD9',
-    justifyContent: 'center',
-    alignItems: 'center',
+    borderColor: "#12CDD9",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 3,
     marginLeft: 10,
     width: 43,
@@ -260,41 +270,41 @@ const styles = StyleSheet.create({
   },
 
   heading: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
   },
 
   premiumText: {
-    color: 'white',
+    color: "white",
     fontSize: 10,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
   },
 
   premiumLogo: {
     width: 65,
     height: 20,
-    backgroundColor: '#FF8700',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#FF8700",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 6,
   },
 
   heading4: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
   },
 
   heading4Des: {
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 14,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
   },
 
   titleSection: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginHorizontal: 20,
     marginTop: 65,
   },
@@ -311,10 +321,10 @@ const styles = StyleSheet.create({
   textContainer: {
     width: 135,
     height: 53,
-    backgroundColor: '#252836',
+    backgroundColor: "#252836",
     borderBottomLeftRadius: 12,
     borderBottomRightRadius: 12,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
 
   posterImage: {
@@ -323,23 +333,23 @@ const styles = StyleSheet.create({
   },
 
   posterText: {
-    color: 'white',
+    color: "white",
     fontSize: 14,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
     marginLeft: 8,
   },
 
   posterText2: {
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 10,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     marginLeft: 8,
   },
 
   bottomNav: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
     marginTop: 40,
   },
 
@@ -349,19 +359,19 @@ const styles = StyleSheet.create({
   },
 
   selectedOne: {
-    backgroundColor: 'rgba(37, 40, 54, 1)',
+    backgroundColor: "rgba(37, 40, 54, 1)",
     width: 98,
     height: 40,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 16,
   },
 
   selectedOneText: {
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     marginLeft: 5,
   },
 });

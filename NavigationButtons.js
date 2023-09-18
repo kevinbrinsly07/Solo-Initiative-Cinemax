@@ -22,6 +22,17 @@ export default function NavigationBtn({navigation}) {
           style={styles.btn}>
           <Text>SplashScreen</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Home')}
+          style={styles.btn}>
+          <Text>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('PremiumAcc')}
+          style={styles.btn}>
+          <Text>PremiumAcc</Text>
+        </TouchableOpacity>
       </SafeAreaView>
     </View>
   );

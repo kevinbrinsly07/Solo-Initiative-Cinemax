@@ -11,6 +11,10 @@ import {
   Modal,
 } from "react-native";
 
+const person1 = "../../assets/images/person1.png";
+const person2 = "../../assets/images/person2.png";
+const person3 = "../../assets/images/person3.png";
+
 import { BlurView } from "@react-native-community/blur";
 
 const MovieDetails = ({ navigation }) => {
@@ -60,7 +64,7 @@ const MovieDetails = ({ navigation }) => {
         <ImageBackground source={require(bg)} style={styles.bg}>
           <ImageBackground source={require(overlay)}>
             <View style={styles.top}>
-              <TouchableOpacity onPress={() => navigation.navigate("Search")}>
+              <TouchableOpacity onPress={() => navigation.navigate("Home")}>
                 <Image style={styles.icon} source={require(leftArrow)} />
               </TouchableOpacity>
               <Text style={styles.title}>Spider-Man No Way..</Text>
@@ -105,21 +109,45 @@ const MovieDetails = ({ navigation }) => {
             </View>
           </ImageBackground>
         </ImageBackground>
-        <View style={styles.des}>
-          <Text style={styles.desTitle}>Story Line</Text>
-          <Text style={styles.desInfo}>
-            For the first time in the cinematic history of Spider-Man, our
-            friendly neighborhood hero's identity is revealed, bringing his
-            Super Hero responsibilities into conflict with his normal life and
-            putting those he cares about most at risk. More
+        <View style={styles.storyLine}>
+          <Text style={styles.storyTitle1}>Story Line</Text>
+          <Text style={styles.storyTitle2}>
+            Originally a story from Archie Comics which started in 1941,
+            Riverdale centres around a group of high school students who are
+            shocked by the death of classmate, Jason Blossom. Together
+            theyunravel the secrets of Riverdale and who More
+            <Text style={styles.blueText}> More</Text>
           </Text>
-          <Text style={styles.desTitle}>Cast and Crew</Text>
-          <Text style={styles.desInfo}>
-            For the first time in the cinematic history of Spider-Man, our
-            friendly neighborhood hero's identity is revealed, bringing his
-            Super Hero responsibilities into conflict with his normal life and
-            putting those he cares about most at risk. More
-          </Text>
+        </View>
+        <View style={styles.castAndCrew}>
+          <Text style={styles.storyTitle1}>Cast and Crew</Text>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            style={styles.crew}
+          >
+            <View style={styles.des}>
+              <Image style={styles.person} source={require(person1)} />
+              <View style={styles.desAllText}>
+                <Text style={styles.desText1}>Matt Reeves</Text>
+                <Text style={styles.desText2}>Directors</Text>
+              </View>
+            </View>
+            <View style={styles.des}>
+              <Image style={styles.person} source={require(person2)} />
+              <View style={styles.desAllText}>
+                <Text style={styles.desText1}>Matt Reeves</Text>
+                <Text style={styles.desText2}>Writers</Text>
+              </View>
+            </View>
+            <View style={styles.des}>
+              <Image style={styles.person} source={require(person3)} />
+              <View style={styles.desAllText}>
+                <Text style={styles.desText1}>Matt Reeves</Text>
+                <Text style={styles.desText2}>Directors</Text>
+              </View>
+            </View>
+          </ScrollView>
         </View>
       </ScrollView>
       <View style={styles.bottomNav}>
@@ -318,24 +346,63 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
-  des: {
-    marginLeft: 24,
-    marginTop: 24,
+  storyLine: {
+    marginTop: 32,
+    marginLeft: 54,
   },
 
-  desTitle: {
+  storyTitle1: {
     color: "white",
     fontSize: 16,
     fontFamily: "Montserrat-SemiBold",
   },
 
-  desInfo: {
+  storyTitle2: {
     color: "#EBEBEF",
     fontSize: 14,
     fontFamily: "Montserrat-Regular",
-    width: 325,
     marginTop: 8,
-    marginBottom: 24,
+    width: 327,
+  },
+
+  blueText: {
+    color: "#12CDD9",
+    fontFamily: "Montserrat-SemiBold",
+  },
+
+  castAndCrew: {
+    marginTop: 24,
+    marginLeft: 54,
+  },
+
+  des: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    width: 138,
+    marginTop: 16,
+    marginRight: 16,
+  },
+
+  person: {
+    width: 40,
+    height: 40,
+  },
+
+  desText1: {
+    color: "white",
+    fontSize: 14,
+    fontFamily: "Montserrat-SemiBold",
+  },
+
+  desText2: {
+    color: "#92929D",
+    fontSize: 10,
+    fontFamily: "Montserrat-Medium",
+  },
+
+  desAllText: {
+    marginLeft: 8,
   },
 
   bottomNav: {

@@ -6,12 +6,12 @@ import {
   Text,
   Image,
   TouchableOpacity,
+  ScrollView,
+  TextInput,
+  FlatList,
 } from "react-native";
 
 import Carousel, { Pagination } from "react-native-snap-carousel";
-import SearchBar from "./SearchBar";
-import Tab from "./Tab";
-import MoviePosterList from "./MoviePosterList";
 
 const Home = ({ navigation }) => {
   const profilePic = "../../assets/images/profilePic.png";
@@ -22,6 +22,13 @@ const Home = ({ navigation }) => {
   const searchIcon = "../../assets/images/searchIcon.png";
   const download = "../../assets/images/download.png";
   const person = "../../assets/images/person.png";
+
+  const filterIcon = "../../assets/images/filterIcon.png";
+  const line2 = "../../assets/images/line2.png";
+
+  const poster1 = "../../assets/images/poster1.png";
+  const poster2 = "../../assets/images/poster2.png";
+  const poster3 = "../../assets/images/poster3.png";
 
   const [activeIndex, setActiveIndex] = useState(1);
 
@@ -59,10 +66,68 @@ const Home = ({ navigation }) => {
     );
   };
 
+  const movieData = [
+    {
+      id: "1",
+      image: require(poster1),
+      text: "Spider-Man No..",
+      text2: "Action",
+      navigation: "MovieDetails",
+    },
+    {
+      id: "2",
+      image: require(poster2),
+      text: "Life of PI",
+      text2: "Action",
+      navigation: "MovieDetails",
+    },
+    {
+      id: "3",
+      image: require(poster3),
+      text: "Riverdale",
+      text2: "Action",
+      navigation: "SerialDetails",
+    },
+    {
+      id: "4",
+      image: require(poster1),
+      text: "Spider-Man No..",
+      text2: "Action",
+      navigation: "MovieDetails",
+    },
+    {
+      id: "5",
+      image: require(poster2),
+      text: "Life of PI",
+      text2: "Action",
+      navigation: "MovieDetails",
+    },
+    {
+      id: "6",
+      image: require(poster3),
+      text: "Riverdale",
+      text2: "Action",
+      navigation: "MovieDetails",
+    },
+  ];
+
+  const renderItem2 = ({ item }) => (
+    <TouchableOpacity
+      onPress={() => navigation.navigate(item.navigation)}
+      style={styles.itemContainer}
+    >
+      <Image source={item.image} style={styles.posterImage} />
+      <View style={styles.textContainer}>
+        <Text style={styles.posterText}>{item.text}</Text>
+        <Text style={styles.posterText2}>{item.text2}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
-      <View style={styles.content}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
         <View style={styles.firstContainer}>
           <Image style={styles.logoCN} source={require(profilePic)} />
           <View style={styles.firstContainerSub}>
@@ -79,19 +144,34 @@ const Home = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-        <View style={styles.SearchBar}>
-          <SearchBar />
+        <View style={styles.center}>
+          <View style={styles.SearchBar}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("UpcomingMovie")}
+            >
+              <Image style={styles.Icon} source={require(searchIcon)} />
+            </TouchableOpacity>
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Search a title.."
+              placeholderTextColor={"#92929D"}
+            />
+            <Image style={styles.line2} source={require(line2)} />
+            <TouchableOpacity onPress={() => navigation.navigate("Genre")}>
+              <Image style={styles.Icon} source={require(filterIcon)} />
+            </TouchableOpacity>
+          </View>
         </View>
 
-        <View style={styles.AlignCenter}>
-          <Carousel
-            data={data}
-            renderItem={renderItem}
-            onSnapToItem={(index) => setActiveIndex(index)}
-            sliderWidth={500}
-            itemWidth={245}
-            firstItem={1}
-          />
+        <Carousel
+          data={data}
+          renderItem={renderItem}
+          onSnapToItem={(index) => setActiveIndex(index)}
+          sliderWidth={500}
+          itemWidth={245}
+          firstItem={1}
+        />
+        <View style={styles.center}>
           <Pagination
             dotsLength={data.length}
             activeDotIndex={activeIndex}
@@ -101,41 +181,110 @@ const Home = ({ navigation }) => {
           />
         </View>
 
-        <View>
-          <Text style={styles.heading3}>Categories</Text>
+        <Text style={styles.heading3}>Categories</Text>
+
+        <View style={styles.sliderContainer}>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <TouchableOpacity style={[styles.box1, styles.selected]}>
+              <Text style={[styles.text1, styles.selectedText]}>All</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.box1}>
+              <Text style={styles.text1}>Comedy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.box1}>
+              <Text style={styles.text1}>Animation</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.box1}>
+              <Text style={styles.text1}>Documentary</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.box1}>
+              <Text style={styles.text1}>N/A</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.box1}>
+              <Text style={styles.text1}>N/A</Text>
+            </TouchableOpacity>
+          </ScrollView>
         </View>
 
-        <View style={styles.tab}>
-          <Tab />
-        </View>
-
-        <Text style={styles.heading4}>Most Popular</Text>
-        <Text style={styles.heading4Des}>See All</Text>
-        <View style={styles.moviePosterList}>
-          <MoviePosterList />
-        </View>
-
-        <View style={styles.bottomNav}>
-          <View style={[styles.navSec1, styles.selectedOne]}>
-            <Image style={styles.navIcon} source={require(home)} />
-            <Text style={styles.selectedOneText}>Home</Text>
-          </View>
+        <View style={styles.titles}>
+          <Text style={styles.heading4}>Most Popular</Text>
           <TouchableOpacity
-            style={styles.navSec1}
-            onPress={() => navigation.navigate("Search")}
+            onPress={() => navigation.navigate("MostPopularMovie")}
           >
-            <Image style={styles.navIcon} source={require(searchIcon)} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => navigation.navigate("Download")}
-            style={styles.navSec1}
-          >
-            <Image style={styles.navIcon} source={require(download)} />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.navSec1}>
-            <Image style={styles.navIcon} source={require(person)} />
+            <Text style={styles.heading4Des}>See All</Text>
           </TouchableOpacity>
         </View>
+
+        <View style={styles.movieSlider}>
+          <FlatList
+            data={movieData}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={(item) => item.id}
+            renderItem={renderItem2}
+          />
+        </View>
+
+        <View style={styles.titles}>
+          <Text style={styles.heading4}>Upcoming</Text>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("UpcomingMovie")}
+          >
+            <Text style={styles.heading4Des}>See All</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.movieSlider}>
+          <FlatList
+            data={movieData}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={(item) => item.id}
+            renderItem={renderItem2}
+          />
+        </View>
+
+        <View style={styles.titles}>
+          <Text style={styles.heading4}>Most Popular</Text>
+          <TouchableOpacity>
+            <Text style={styles.heading4Des}>See All</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={[styles.movieSlider, styles.lastSlide]}>
+          <FlatList
+            data={movieData}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={(item) => item.id}
+            renderItem={renderItem2}
+          />
+        </View>
+      </ScrollView>
+
+      <View style={styles.bottomNav}>
+        <View style={[styles.navSec1, styles.selectedOne]}>
+          <Image style={styles.navIcon} source={require(home)} />
+          <Text style={styles.selectedOneText}>Home</Text>
+        </View>
+        <TouchableOpacity
+          style={styles.navSec1}
+          onPress={() => navigation.navigate("Search")}
+        >
+          <Image style={styles.navIcon} source={require(searchIcon)} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Download")}
+          style={styles.navSec1}
+        >
+          <Image style={styles.navIcon} source={require(download)} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Profile")}
+          style={styles.navSec1}
+        >
+          <Image style={styles.navIcon} source={require(person)} />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -144,10 +293,6 @@ const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "rgba(31, 29, 43, 1)",
-    height: "100%",
-  },
-
-  content: {
     height: "100%",
   },
 
@@ -160,8 +305,7 @@ const styles = StyleSheet.create({
 
   firstContainerSub: {
     flexDirection: "column",
-    flex: 1,
-    marginLeft: 16,
+    marginRight: 100,
   },
 
   logoCN: {
@@ -182,7 +326,32 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 12,
     opacity: 0.8,
-    zIndex: 1,
+  },
+
+  SearchBar: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    backgroundColor: "#252836",
+    borderRadius: 24,
+    width: 327,
+    height: 41,
+  },
+
+  Icon: {
+    width: 16,
+    height: 16,
+    marginTop: 12,
+  },
+
+  line2: {
+    marginTop: 12,
+  },
+
+  searchInput: {
+    width: 239,
+    color: "#92929D",
+    fontSize: 14,
+    fontFamily: "Montserrat-Medium",
   },
 
   heading1: {
@@ -204,35 +373,22 @@ const styles = StyleSheet.create({
     letterSpacing: 0.12,
   },
 
-  SearchBar: {
-    position: "absolute",
-    top: 80,
-    left: 50,
-    zIndex: 1,
-  },
-
   slide: {
     width: 200,
     height: 164,
-    justifyContent: "flex-end",
+    justifyContent: "center",
     alignItems: "center",
-    marginTop: 200,
+    marginTop: 14,
   },
 
   image: {
-    width: 275,
     height: 134,
+    width: 275,
   },
 
   imageWithMargin: {
     height: 154,
     width: 295,
-  },
-
-  AlignCenter: {
-    position: "absolute",
-    left: 0,
-    top: -50,
   },
 
   CText: {
@@ -255,22 +411,21 @@ const styles = StyleSheet.create({
   },
 
   paginationContainer: {
-    position: "absolute",
-    left: 150,
-    top: 330,
+    position: "relative",
+    top: -40,
   },
 
   paginationDot: {
-    width: 30,
-    height: 10,
-    borderRadius: 5,
+    width: 24,
+    height: 8,
+    borderRadius: 8,
     backgroundColor: "#12CDD9",
   },
 
   paginationInactiveDot: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
+    width: 12,
+    height: 12,
+    borderRadius: 100,
     opacity: 0.32,
     backgroundColor: "#12CDD9",
   },
@@ -279,46 +434,31 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 16,
     fontFamily: "Montserrat-SemiBold",
-    position: "absolute",
-    top: 280,
-    left: 24,
-  },
-
-  tab: {
-    position: "absolute",
-    top: 400,
-    left: 28,
+    margin: 24,
+    position: "relative",
+    top: -76,
   },
 
   heading4: {
-    position: "absolute",
-    top: 464,
-    left: 24,
     color: "white",
     fontSize: 16,
     fontFamily: "Montserrat-SemiBold",
   },
 
   heading4Des: {
-    position: "absolute",
-    top: 464,
-    right: 24,
     color: "#12CDD9",
     fontSize: 14,
     fontFamily: "Montserrat-Medium",
-  },
-
-  moviePosterList: {
-    position: "absolute",
-    top: 500,
-    left: 14,
+    position: "relative",
+    top: -5,
   },
 
   bottomNav: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-evenly",
-    marginTop: 645,
+    position: "relative",
+    bottom: 0,
     height: 72,
   },
 
@@ -342,6 +482,90 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: "Montserrat-Medium",
     marginLeft: 5,
+  },
+
+  center: {
+    alignItems: "center",
+  },
+
+  sliderContainer: {
+    position: "relative",
+    top: -70,
+    left: 24,
+  },
+
+  box1: {
+    width: 100,
+    height: 31,
+    textAlign: "center",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  text1: {
+    color: "white",
+    fontSize: 12,
+    fontFamily: "Montserrat-Medium",
+  },
+
+  selected: {
+    backgroundColor: "#252836",
+    borderRadius: 8,
+  },
+
+  selectedText: {
+    color: "#12CDD9",
+  },
+
+  titles: {
+    position: "relative",
+    top: -30,
+    left: 24,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: 380,
+  },
+
+  movieSlider: {
+    marginBottom: 80,
+    left: 15,
+  },
+
+  lastSlide: {
+    marginBottom: 10,
+  },
+
+  itemContainer: {
+    marginHorizontal: 10,
+  },
+
+  textContainer: {
+    width: 135,
+    height: 53,
+    backgroundColor: "#252836",
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
+    justifyContent: "center",
+  },
+
+  posterImage: {
+    width: 135,
+    height: 178,
+  },
+
+  posterText: {
+    color: "white",
+    fontSize: 14,
+    fontFamily: "Montserrat-SemiBold",
+    marginLeft: 8,
+  },
+
+  posterText2: {
+    color: "#92929D",
+    fontSize: 10,
+    fontFamily: "Montserrat-Medium",
+    marginLeft: 8,
   },
 });
 

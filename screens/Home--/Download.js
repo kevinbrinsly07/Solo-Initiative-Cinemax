@@ -27,7 +27,7 @@ const Download = ({ navigation }) => {
         <View style={styles.firstContainer}>
           <TouchableOpacity
             style={styles.arrowBtn}
-            onPress={() => navigation.navigate("MovieDetails")}
+            onPress={() => navigation.navigate("Home")}
           >
             <Image style={styles.icon} source={require(leftArrow)} />
           </TouchableOpacity>
@@ -36,7 +36,10 @@ const Download = ({ navigation }) => {
 
         <View style={styles.secondContainer}>
           <View style={styles.secondSubContainer}>
-            <TouchableOpacity onPress={() => navigation.navigate("BlankDownload")} style={styles.poster}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("BlankDownload")}
+              style={styles.poster}
+            >
               <Image style={styles.miniPoster} source={require(miniPoster2)} />
             </TouchableOpacity>
             <View style={styles.posterText}>
@@ -85,7 +88,10 @@ const Download = ({ navigation }) => {
           <Image style={styles.navIcon} source={require(download)} />
           <Text style={styles.selectedOneText}>Download</Text>
         </View>
-        <TouchableOpacity style={styles.navSec1}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Profile")}
+          style={styles.navSec1}
+        >
           <Image style={styles.navIcon} source={require(person)} />
         </TouchableOpacity>
       </View>

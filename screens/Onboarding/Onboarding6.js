@@ -20,7 +20,7 @@ const Onboarding6 = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
+      <StatusBar hidden={true}/>
       <View style={styles.upperPart}>
         <Svg style={styles.color} height="380" width="100%">
           <View style={styles.imgPart}>
