@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   View,
   StatusBar,
@@ -7,20 +7,36 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-} from 'react-native';
+} from "react-native";
 
-const NewPassword = ({navigation}) => {
-  const leftArrow = '../../assets/images/leftArrow.png';
-  const eyeOff = '../../assets/images/eyeOff.png';
+import auth from "@react-native-firebase/auth";
+
+// import otp from './Verification';
+
+const NewPassword = ({ navigation }) => {
+  const leftArrow = "../../assets/images/leftArrow.png";
+  const eyeOff = "../../assets/images/eyeOff.png";
+
+  // const [newPassword, setNewPassword] = useState("");
+
+  // const confirmPasswordReset = async () => {
+  //   try {
+  //     await auth().confirmPasswordReset(otp, newPassword);
+  //     Alert.alert("Password Reset Successful", "Your password has been reset.");
+  //   } catch (error) {
+  //     Alert.alert("Password Reset Failed", error.message);
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
+      <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
       <View style={styles.border}>
         <View style={styles.firstContainer}>
           <TouchableOpacity
             style={styles.arrowBtn}
-            onPress={() => navigation.navigate('ResetPassword')}>
+            onPress={() => navigation.navigate("ResetPassword")}
+          >
             <Image style={styles.icon} source={require(leftArrow)} />
           </TouchableOpacity>
         </View>
@@ -36,6 +52,8 @@ const NewPassword = ({navigation}) => {
               style={styles.inputName}
               placeholder="Password"
               placeholderTextColor="#92929D"
+              onChangeText={(text) => setNewPassword(text)}
+              value={newPassword}
             />
           </View>
           <TouchableOpacity style={styles.eyeOff}>
@@ -60,7 +78,9 @@ const NewPassword = ({navigation}) => {
         <View style={styles.bottomPart}>
           <TouchableOpacity
             style={styles.btn}
-            onPress={() => navigation.navigate('LoginScreen')}>
+            // onPress={() => navigation.navigate("LoginScreen")}
+            onPress={confirmPasswordReset}
+          >
             <Text style={styles.btnText}>Reset</Text>
           </TouchableOpacity>
         </View>
@@ -71,8 +91,8 @@ const NewPassword = ({navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(31, 29, 43, 1)',
-    height: '100%',
+    backgroundColor: "rgba(31, 29, 43, 1)",
+    height: "100%",
   },
 
   border: {
@@ -81,14 +101,14 @@ const styles = StyleSheet.create({
   },
 
   firstContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
 
   text: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
     letterSpacing: 0.12,
     marginHorizontal: 140,
   },
@@ -101,37 +121,37 @@ const styles = StyleSheet.create({
   arrowBtn: {
     width: 32,
     height: 32,
-    backgroundColor: 'rgba(37, 40, 54, 1)',
+    backgroundColor: "rgba(37, 40, 54, 1)",
     opacity: 0.8,
     borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   text2: {
-    color: 'white',
+    color: "white",
     fontSize: 24,
-    fontFamily: 'Poppins-SemiBold',
+    fontFamily: "Poppins-SemiBold",
   },
 
   secondContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 46,
     marginBottom: 24,
   },
 
   text3: {
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 14,
-    fontFamily: 'Poppins-Medium',
+    fontFamily: "Poppins-Medium",
   },
 
   text4: {
-    color: '#EBEBEF',
+    color: "#EBEBEF",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
-    position: 'absolute',
+    position: "absolute",
     top: -8,
     left: 50,
     zIndex: 1,
@@ -139,16 +159,16 @@ const styles = StyleSheet.create({
 
   inputName: {
     borderWidth: 1,
-    borderColor: '#252836',
+    borderColor: "#252836",
     borderRadius: 24,
     width: 327,
     height: 53,
     paddingLeft: 16,
-    color: '#92929D',
+    color: "#92929D",
   },
 
   inputSection: {
-    alignItems: 'center',
+    alignItems: "center",
   },
 
   textBox1: {
@@ -160,38 +180,38 @@ const styles = StyleSheet.create({
   },
 
   eyeOff: {
-    position: 'absolute',
+    position: "absolute",
     top: 13,
     right: 50,
   },
 
   text5: {
-    color: '#12CDD9',
+    color: "#12CDD9",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
     marginTop: 8,
     marginLeft: 250,
   },
 
   bottomPart: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 40,
   },
 
   btn: {
-    backgroundColor: '#12CDD9',
+    backgroundColor: "#12CDD9",
     width: 327,
     height: 56,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 32,
   },
 
   btnText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
   },
 });

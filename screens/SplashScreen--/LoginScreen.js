@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
+  Alert,
 } from 'react-native';
 
 import auth from "@react-native-firebase/auth";
@@ -22,12 +23,13 @@ const LoginScreen = ({navigation}) => {
   const handleSignIn = async () => {
     try {
       await auth().signInWithEmailAndPassword(email, password);
-      console.log(' User signed in successfully');
+      Alert.alert('User signed in successfully');
       navigation.replace('Home');
     } catch (error) {
-      console.error('Sign in error: ', error);
+      Alert.alert('Sign in error: ', error.message);
     }
   };
+  
 
   return (
     <View style={styles.container}>

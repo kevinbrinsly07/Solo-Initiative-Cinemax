@@ -10,7 +10,7 @@ import Onboarding3 from "./screens/Onboarding/Onboarding3";
 import Onboarding4 from "./screens/Onboarding/Onboarding4";
 import Onboarding5 from "./screens/Onboarding/Onboarding5";
 import Onboarding6 from "./screens/Onboarding/Onboarding6";
-import SplashScreen from "./screens/SplashScreen--/SpashScreen";
+import SplashScreen from "./screens/SplashScreen--/SplashScreen";
 import LoginOrSignup from "./screens/SplashScreen--/LoginOrSignup";
 import LoginScreen from "./screens/SplashScreen--/LoginScreen";
 import SignupScreen from "./screens/SplashScreen--/SignupScreen";
@@ -39,6 +39,9 @@ import EditProfile from "./screens/Home--/EditProfile";
 import PrivacyPolicy from "./screens/Home--/PrivacyPolicy";
 import Language from "./screens/Home--/Language";
 import Notification from "./screens/Home--/Notification";
+
+import Upload from "./screens/uploadFiles/Upload";
+import UploadDone from "./screens/uploadFiles/UploadDone";
 
 
 
@@ -84,6 +87,9 @@ export default function App() {
         <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} />
         <Stack.Screen name="Language" component={Language} />
         <Stack.Screen name="Notification" component={Notification} />
+
+        <Stack.Screen name="Upload" component={Upload} />
+        <Stack.Screen name="UploadDone" component={UploadDone} />
 
       </Stack.Navigator>
     </NavigationContainer>

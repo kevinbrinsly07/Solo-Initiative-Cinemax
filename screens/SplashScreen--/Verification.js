@@ -12,6 +12,11 @@ import {
 const Verification = ({navigation}) => {
   const leftArrow = '../../assets/images/leftArrow.png';
 
+  // const [otp, setOtp] = useState("");
+  // const [newPassword, setNewPassword] = useState("");
+
+  
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
@@ -35,6 +40,8 @@ const Verification = ({navigation}) => {
             style={styles.box}
             keyboardType="number-pad"
             maxLength={1}
+            onChangeText={(text) => setOtp(text)}
+            value={otp}
           />
           <TextInput
             style={styles.box}

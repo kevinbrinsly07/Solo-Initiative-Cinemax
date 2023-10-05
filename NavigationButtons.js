@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   Text,
   SafeAreaView,
+  Button
 } from 'react-native';
 
 export default function NavigationBtn({navigation}) {
@@ -32,6 +33,17 @@ export default function NavigationBtn({navigation}) {
           onPress={() => navigation.navigate('PremiumAcc')}
           style={styles.btn}>
           <Text>PremiumAcc</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Upload')}
+          style={styles.btn}>
+          <Text>Upload</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('UploadDone')}
+          style={styles.btn}>
+          <Text>NIC List</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </View>

@@ -11,6 +11,7 @@ MERGED from [com.facebook.flipper:flipper:0.182.0] /Users/kevinbrinsly/.gradle/c
 MERGED from [:react-native-community_blur] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-community/blur/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-community_checkbox] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase_firestore] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/firestore/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-30:12
 MERGED from [:react-native-gesture-handler] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-linear-gradient] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -21,7 +22,8 @@ MERGED from [:react-native-vector-icons] /Users/kevinbrinsly/cloud99x/Cinemax-Gi
 MERGED from [com.facebook.react:react-android:0.72.4] /Users/kevinbrinsly/.gradle/caches/transforms-3/36532376ebeea20e542ccac93dfe96ed/transformed/jetified-react-android-0.72.4-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.react:hermes-android:0.72.4] /Users/kevinbrinsly/.gradle/caches/transforms-3/928dcabc2498742a9c0904af3441856d/transformed/jetified-hermes-android-0.72.4-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/c4750a80bbf3287e9170074f043b0b55/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.core:core-ktx:1.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/9781723044bf8a2815ed6db6dea771c4/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/4afd669d35f096ae30b74015fb85a314/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
@@ -29,11 +31,12 @@ MERGED from [com.google.android.material:material:1.1.0] /Users/kevinbrinsly/.gr
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/e21a48fc07e68aa916f2f9287a02e87d/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/f52f5947a10c752f9ed467e4c63e27c1/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/ac72e566de342fe130be9db9d56bc5d6/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/81847f605f01734638d3bfa6037a1bab/transformed/jetified-play-services-auth-api-phone-18.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/kevinbrinsly/.gradle/caches/transforms-3/c324eb8449f0ecde4a750c0748d57b72/transformed/jetified-play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/6a876bd89899c2d7e57ebe89e35314c0/transformed/jetified-play-services-fido-20.0.1/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/28f35991e2f52ee95c7b8bedc9abdd47/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/36c22b74b8edb198fce4d7b4ad0b41b2/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/b71ef279c1683b5749acb2f0aa91f82a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f91b900064fecea3ecbedd5cd1e9b83/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/kevinbrinsly/.gradle/caches/transforms-3/04618219489c9d9e3066293e05e86ee0/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:15:1-39:12
@@ -91,10 +94,12 @@ MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/kevinbrinsly/.
 MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/c83cce83299a5890e6bdd54ea1183d00/transformed/jetified-imagepipeline-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/28fadbb90e7943378d90435903865ad8/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/774a422f18fbbb92a48c5e2fb81950a9/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/753e201f65450e63d6d602d0ea6e36a8/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/67a67501e6b92b42b96a8ab87a4de335/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/14f32fbb8be7d8611cd0cb58dbf568ff/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/621ae986691b9329d91b71fa835c8189/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/83227a20576ab9694b30090c6f9ede98/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/965f54ad5b9c8512f0c29495e6ee5a8e/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/debug/AndroidManifest.xml:2:1-13:12
@@ -120,8 +125,10 @@ MERGED from [com.facebook.flipper:flipper:0.182.0] /Users/kevinbrinsly/.gradle/c
 MERGED from [com.facebook.flipper:flipper:0.182.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/2c4aa7449f1f2904e68bb900cc469463/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:15:5-67
 MERGED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
 MERGED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
 	android:name
@@ -132,12 +139,14 @@ MERGED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/main/And
 MERGED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-28:19
 MERGED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-28:19
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:28:5-73:19
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3b154b3d0fec1a41e0cc514b1d732555/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3b154b3d0fec1a41e0cc514b1d732555/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/6a876bd89899c2d7e57ebe89e35314c0/transformed/jetified-play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/6a876bd89899c2d7e57ebe89e35314c0/transformed/jetified-play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/28f35991e2f52ee95c7b8bedc9abdd47/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
@@ -234,6 +243,8 @@ MERGED from [:react-native-community_checkbox] /Users/kevinbrinsly/cloud99x/Cine
 MERGED from [:react-native-community_checkbox] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_firestore] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/firestore/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_firestore] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/firestore/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
 MERGED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
 MERGED from [:react-native-gesture-handler] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
@@ -254,8 +265,10 @@ MERGED from [com.facebook.react:hermes-android:0.72.4] /Users/kevinbrinsly/.grad
 MERGED from [com.facebook.react:hermes-android:0.72.4] /Users/kevinbrinsly/.gradle/caches/transforms-3/928dcabc2498742a9c0904af3441856d/transformed/jetified-hermes-android-0.72.4-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/c4750a80bbf3287e9170074f043b0b55/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/c4750a80bbf3287e9170074f043b0b55/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:21:5-23:64
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:21:5-23:64
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/9781723044bf8a2815ed6db6dea771c4/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
@@ -270,8 +283,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kevinbrinsly/.
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/f52f5947a10c752f9ed467e4c63e27c1/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/ac72e566de342fe130be9db9d56bc5d6/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/ac72e566de342fe130be9db9d56bc5d6/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/81847f605f01734638d3bfa6037a1bab/transformed/jetified-play-services-auth-api-phone-18.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/81847f605f01734638d3bfa6037a1bab/transformed/jetified-play-services-auth-api-phone-18.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/kevinbrinsly/.gradle/caches/transforms-3/c324eb8449f0ecde4a750c0748d57b72/transformed/jetified-play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
@@ -280,6 +293,8 @@ MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/kevinbrins
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/6a876bd89899c2d7e57ebe89e35314c0/transformed/jetified-play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/28f35991e2f52ee95c7b8bedc9abdd47/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/28f35991e2f52ee95c7b8bedc9abdd47/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/36c22b74b8edb198fce4d7b4ad0b41b2/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/36c22b74b8edb198fce4d7b4ad0b41b2/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/b71ef279c1683b5749acb2f0aa91f82a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/b71ef279c1683b5749acb2f0aa91f82a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f91b900064fecea3ecbedd5cd1e9b83/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
@@ -394,6 +409,8 @@ MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/kevinbrinsl
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/28fadbb90e7943378d90435903865ad8/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/774a422f18fbbb92a48c5e2fb81950a9/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/774a422f18fbbb92a48c5e2fb81950a9/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/753e201f65450e63d6d602d0ea6e36a8/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/753e201f65450e63d6d602d0ea6e36a8/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/67a67501e6b92b42b96a8ab87a4de335/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/67a67501e6b92b42b96a8ab87a4de335/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/14f32fbb8be7d8611cd0cb58dbf568ff/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
@@ -402,10 +419,12 @@ MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/kevinbrinsly/.gradle/cache
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/621ae986691b9329d91b71fa835c8189/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/83227a20576ab9694b30090c6f9ede98/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/83227a20576ab9694b30090c6f9ede98/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/965f54ad5b9c8512f0c29495e6ee5a8e/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/965f54ad5b9c8512f0c29495e6ee5a8e/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/debug/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:23:9-61
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
 		INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kevinbrinsly/cloud99x/Cinemax-Github/android/app/src/debug/AndroidManifest.xml
@@ -432,10 +451,14 @@ ADDED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Gi
 		ADDED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/200ab4827659660bb80ccdd0741bc521/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/753e201f65450e63d6d602d0ea6e36a8/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/753e201f65450e63d6d602d0ea6e36a8/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [:react-native-firebase_auth] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
 meta-data#app_data_collection_default_enabled
@@ -446,8 +469,10 @@ ADDED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Git
 		ADDED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-63
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-21:19
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:66:9-72:19
-MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/kevinbrinsly/.gradle/caches/transforms-3/04618219489c9d9e3066293e05e86ee0/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/kevinbrinsly/.gradle/caches/transforms-3/04618219489c9d9e3066293e05e86ee0/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -474,80 +499,86 @@ ADDED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Git
 		ADDED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-35
 	android:name
 		ADDED from [:react-native-firebase_app] /Users/kevinbrinsly/cloud99x/Cinemax-Github/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-88
-activity#com.google.firebase.auth.internal.GenericIdpActivity
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:29:9-46:20
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:31:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:33:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:32:13-36
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:34:13-72
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:30:13-80
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:35:13-45:29
-action#android.intent.action.VIEW
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:36:25-66
-category#android.intent.category.DEFAULT
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:38:17-76
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:38:27-73
-category#android.intent.category.BROWSABLE
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:39:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:39:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:41:17-44:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:43:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:42:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:44:21-48
-activity#com.google.firebase.auth.internal.RecaptchaActivity
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:47:9-64:20
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:49:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:51:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:50:13-36
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:52:13-72
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:48:13-79
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:53:13-63:29
-meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:69:13-71:85
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:17:13-19:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:71:17-82
+		ADDED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:19:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/64c2247a99d586051b8945fbcd7c3998/transformed/jetified-firebase-auth-22.1.1/AndroidManifest.xml:70:17-109
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:23:9-27:75
+		ADDED from [com.google.firebase:firebase-firestore:24.8.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/1708abb4088f98c76165c68c8c92aa9e/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:18:17-111
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:29:9-46:20
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:25:13-46
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:33:13-44
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:26:13-37
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:32:13-36
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:27:13-72
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:34:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:33:9-37:51
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:51:13-44
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:35:13-36
-	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:37:13-48
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:36:13-107
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:52:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.6.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/db87ff055a94702a7b1149594e6a0146/transformed/jetified-play-services-auth-20.6.0/AndroidManifest.xml:34:13-89
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:53:13-63:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/kevinbrinsly/.gradle/caches/transforms-3/33a7793f447160e86f04d94ab905ddb9/transformed/jetified-firebase-auth-22.1.2/AndroidManifest.xml:70:17-109
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/kevinbrinsly/.gradle/caches/transforms-3/3f5e581b6c5a7c27d0d6ce7336c036bc/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/kevinbrinsly/.gradle/caches/transforms-3/b71ef279c1683b5749acb2f0aa91f82a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 	android:exported

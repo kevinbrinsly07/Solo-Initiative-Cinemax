@@ -11,6 +11,7 @@ import {
   FlatList,
 } from "react-native";
 
+
 import Carousel, { Pagination } from "react-native-snap-carousel";
 
 const Home = ({ navigation }) => {
@@ -46,10 +47,10 @@ const Home = ({ navigation }) => {
       text2: "On March 2, 2022",
     },
     {
-      id: 4,
+      id: 3,
       image: require(poster),
-      text: "title4",
-      text2: "date4",
+      text: "title3",
+      text2: "date3",
     },
   ];
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import {
   View,
   StatusBar,
@@ -7,19 +7,39 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-} from 'react-native';
+  Alert,
+} from "react-native";
 
-const ResetPassword = ({navigation}) => {
-  const leftArrow = '../../assets/images/leftArrow.png';
+import auth from "@react-native-firebase/auth";
+
+
+const ResetPassword = ({ navigation }) => {
+  const leftArrow = "../../assets/images/leftArrow.png";
+
+  const [email, setEmail] = useState("");
+
+  const sendPasswordResetEmail = async () => {
+    try {
+      await auth().sendPasswordResetEmail(email);
+      Alert.alert(
+        "Password Reset Email Sent",
+        "Check your email for a password reset link."
+      );
+      navigation.replace('LoginScreen');
+    } catch (error) {
+      Alert.alert("Password Reset Failed", error.message);
+    }
+  };
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'rgba(31, 29, 43, 1)'} />
+      <StatusBar backgroundColor={"rgba(31, 29, 43, 1)"} />
       <View style={styles.border}>
         <View style={styles.firstContainer}>
           <TouchableOpacity
             style={styles.arrowBtn}
-            onPress={() => navigation.navigate('LoginScreen')}>
+            onPress={() => navigation.navigate("LoginScreen")}
+          >
             <Image style={styles.icon} source={require(leftArrow)} />
           </TouchableOpacity>
         </View>
@@ -34,13 +54,17 @@ const ResetPassword = ({navigation}) => {
               style={styles.inputName}
               placeholder="Tiffanyjearsey@gmail.com"
               placeholderTextColor="#92929D"
+              onChangeText={(text) => setEmail(text)}
+              value={email}
             />
           </View>
         </View>
         <View style={styles.bottomPart}>
           <TouchableOpacity
             style={styles.btn}
-            onPress={() => navigation.navigate('Verification')}>
+            // onPress={() => navigation.navigate("Verification")}
+            onPress={sendPasswordResetEmail}
+          >
             <Text style={styles.btnText}>Next</Text>
           </TouchableOpacity>
         </View>
@@ -51,8 +75,8 @@ const ResetPassword = ({navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(31, 29, 43, 1)',
-    height: '100%',
+    backgroundColor: "rgba(31, 29, 43, 1)",
+    height: "100%",
   },
 
   border: {
@@ -61,8 +85,8 @@ const styles = StyleSheet.create({
   },
 
   firstContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
 
   icon: {
@@ -73,38 +97,38 @@ const styles = StyleSheet.create({
   arrowBtn: {
     width: 32,
     height: 32,
-    backgroundColor: 'rgba(37, 40, 54, 1)',
+    backgroundColor: "rgba(37, 40, 54, 1)",
     opacity: 0.8,
     borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   text2: {
-    color: 'white',
+    color: "white",
     fontSize: 28,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
   },
 
   secondContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 46,
   },
 
   text3: {
-    color: '#92929D',
+    color: "#92929D",
     fontSize: 14,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
   },
 
   text4: {
-    color: '#EBEBEF',
+    color: "#EBEBEF",
     fontSize: 12,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
-    position: 'absolute',
+    position: "absolute",
     top: -8,
     left: 50,
     zIndex: 1,
@@ -112,16 +136,16 @@ const styles = StyleSheet.create({
 
   inputName: {
     borderWidth: 1,
-    borderColor: '#252836',
+    borderColor: "#252836",
     borderRadius: 24,
     width: 327,
     height: 53,
     paddingLeft: 16,
-    color: '#92929D',
+    color: "#92929D",
   },
 
   inputSection: {
-    alignItems: 'center',
+    alignItems: "center",
   },
 
   textBox1: {
@@ -129,23 +153,23 @@ const styles = StyleSheet.create({
   },
 
   bottomPart: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 40,
   },
 
   btn: {
-    backgroundColor: '#12CDD9',
+    backgroundColor: "#12CDD9",
     width: 327,
     height: 56,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 32,
   },
 
   btnText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: "Montserrat-Medium",
     letterSpacing: 0.12,
   },
 });
